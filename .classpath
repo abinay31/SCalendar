@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="sc/calendar/dataSource/googleApi/CopyOfCalendarInterface.java|sc/calendar/dataSource/googleApi/CalendarSample.java|sc/calendar/dataSource/internalDb/AndroidCalendar.java" kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="lib" path="libs/google-api-calendar/google-api-calendar-v3-rev3-java-1.4.0-beta.jar"/>
+	<classpathentry kind="lib" path="libs/google-api-calendar/dependencies/google-api-client-1.7.0-beta.jar"/>
+	<classpathentry kind="lib" path="libs/google-api-calendar/dependencies/google-api-client-android2-1.7.0-beta.jar"/>
+	<classpathentry kind="lib" path="libs/google-api-calendar/dependencies/google-http-client-1.7.0-beta.jar"/>
+	<classpathentry kind="lib" path="libs/google-api-calendar/dependencies/google-http-client-android2-1.7.0-beta.jar"/>
+	<classpathentry kind="lib" path="libs/google-api-calendar/dependencies/google-oauth-client-1.7.0-beta.jar"/>
+	<classpathentry kind="lib" path="libs/google-api-calendar/dependencies/guava-11.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/google-api-calendar/dependencies/jackson-core-asl-1.9.4.jar"/>
+	<classpathentry kind="lib" path="libs/google-api-calendar/dependencies/json-20080701.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+	<referencedentry exported="true" kind="lib" path="libs/calendar/dependencies/google-http-client-1.7.0-beta.jar" sourcepath="libs/calendar/dependencies/google-http-client-1.7.0-beta-sources.jar"/>
+</classpath>

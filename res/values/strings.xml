@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SCalendar</string>
+    <string name="clear">Clear</string>
+    <string name="send_events_to_alerts">Create Alerts</string>
+    <string name="event">Event</string>
+    <string name="new_event">New Event</string>
+
+</resources>
