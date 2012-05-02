@@ -26,7 +26,7 @@ public class CalendarEvent implements Comparable<CalendarEvent>, Serializable {
 	private final Date endTime;
 	private final String title;
 	private final String id;
-	private static final SimpleDateFormat dateFormat = new SimpleDateFormat();
+	private static final SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm");
 	private boolean cleared;
 	private final String calId;
 

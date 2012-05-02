@@ -51,7 +51,7 @@ public class DbInterface {
 																+ DbConnection.CALENDER_FK + " = ? "
 																+ " WHERE "+ DbConnection.ID+ "= ?";
 	
-	private static final String REMOVE_ALL_EVENTS = "DELETE FROM "+DbConnection.EVENTS_TABLE_NAME+" WHERE "+DbConnection.CALENDER_FK+ " = ? ";
+	private static final String REMOVE_ALL_EVENTS = "DELETE FROM "+DbConnection.EVENTS_TABLE_NAME+" WHERE "+DbConnection.CALENDER_FK+ " = ? AND ("+DbConnection.EVENTS_CLEARED_NAME+" = 1 OR "+DbConnection.EVENTS_START_NAME+" > ?) ";
 
 	private static final String GET_EVENTS_FOR_CAL = "SELECT * FROM " + DbConnection.EVENTS_TABLE_NAME +" WHERE "+DbConnection.CALENDER_FK+" = ?";
 	
@@ -184,6 +184,8 @@ public class DbInterface {
 
 			SQLiteStatement stmtE = con.compileStatement(stmt);
 			try {
+				stmtE.bindString(1, cal.getId());
+				stmtE.bindLong(2, System.currentTimeMillis());
 				stmtE.execute();
 			} finally {
 				stmtE.close();
